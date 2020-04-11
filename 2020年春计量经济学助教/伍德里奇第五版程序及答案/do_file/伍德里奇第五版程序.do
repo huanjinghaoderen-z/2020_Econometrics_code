@@ -23,7 +23,7 @@
 
 set more off // It can be useful to include the "set more off" command at the start of a do-file so that output scrolls continuously rather than pausing after each page of output.
 
-global path_Wooldridge "E:\Github\own\2020年春计量经济学助教\伍德里奇第五版程序及答案"	// Add your local directory here
+global path_Wooldridge "E:\Github\own\2020年春计量经济学助教\伍德里奇第五版程序及答案"  // Add your local directory here
 
 global outpath_Wooldridge "${path_Wooldridge}\Results"
 cap mkdir "$outpath_Wooldridge"

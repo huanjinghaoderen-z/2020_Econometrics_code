@@ -29,7 +29,7 @@
 
 set more off
 
-global path_Li "E:\Github\own\2020年春计量经济学助教\李子奈第四版程序及答案"	// Add your local directory here
+global path_Li "E:\Github\own\2020年春计量经济学助教\李子奈第四版程序及答案"  // Add your local directory here
 
 global outpath_Li "${path_Li}\Results"
 cap mkdir "$outpath_Li"
