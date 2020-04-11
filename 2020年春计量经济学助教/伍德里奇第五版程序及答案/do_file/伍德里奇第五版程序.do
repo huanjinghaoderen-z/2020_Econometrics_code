@@ -38,10 +38,10 @@ cd "${dta_path_Wooldridge}"
 
 // Set to 1 if want section run, 0 otherwise
 
-global  delimit             					1
+global  delimit             						1
 global	chapter_1_C1							1
 global	chapter_2_12							1
-global	chapter_4_2								1 
+global	chapter_4_2							1 
 global	chapter_1_C3							1
 global	chapter_1_C4							1
 global	chapter_2_C4							1
@@ -50,17 +50,17 @@ global	chapter_3_C3							1
 global	chapter_3_C8							1
 global	chapter_7_1		    					1
 global	chapter_7_6		    					1
-global	chapter_7_C12		    				1
+global	chapter_7_C12		    					1
 global	chapter_4_9		    					1
-global	chapter_4_linear_restrictions		    1
-global	chapter_7_Chow_statistic		    	1
+global	chapter_4_linear_restrictions		    			1
+global	chapter_7_Chow_statistic		    			1
 global	chapter_5_3		    					1
-global	chapter_4_C2		    				1
-global	chapter_4_C5		    				1
-global	chapter_7_C3		    				1
-global	chapter_7_C4		    				1
-global	chapter_7_C6		    				1
-global	chapter_8_4_8_5		    				1
+global	chapter_4_C2		    					1
+global	chapter_4_C5		    					1
+global	chapter_7_C3		    					1
+global	chapter_7_C4		    					1
+global	chapter_7_C6		    					1
+global	chapter_8_4_8_5		    					1
 global	chapter_8_7		    					1
 global	chapter_9_2		    					1
 
