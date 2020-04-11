@@ -538,7 +538,7 @@ if $code_4_11 ///
 	display e(r2)
 	display e(df_r)
 
-	///怀特检验（按照参考答案上的步骤）
+	///怀特检验
 	g X2=X^2
 	reg e2 X X2 
 	
