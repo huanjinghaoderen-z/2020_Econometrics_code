@@ -415,19 +415,16 @@ if $code_4_2_4 ///
 	g lnX1=ln(X1)
 	g lnX2=ln(X2)
 	reg lnY lnX1 lnX2
-	
-	//异方差稳健标准误
-	reg lnY lnX1 lnX2,robust
 
 	//绘制残差图
-	rvpplot lnX2,title("图4.2.3 异方差性检验图")
+	rvfplot // // rvfplot graphs a residual-versus-fitted plot, a graph of the residuals against the fitted values.
+	
+	rvpplot lnX2,title("图4.2.3 异方差性检验图") // rvpplot graphs a residual-versus-predictor plot (a.k.a. independent variable plot or carrier plot), a graph of the residuals against the specified predictor.
 	*可能存在着递增的异方差性
 	
 	//B-P检验
 	estat hettest lnX1 lnX2, iid
-	
-	//怀特检验
-	estat imtest,white
+	*书本涉及的F检验有问题
 	
 	//B-P检验（按照书上的步骤）
 	predict e,resid
@@ -459,7 +456,10 @@ if $code_4_2_4 ///
 	g e2f=exp(lne2f)
 	
 	*进行回归
-	reg lnY lnX1 lnX2 [aw=1/e2f]	
+	reg lnY lnX1 lnX2 [aw=1/e2f]
+	
+	//异方差稳健标准误
+	reg lnY lnX1 lnX2,robust
 }
 
 if $code_4_3_4 ///
